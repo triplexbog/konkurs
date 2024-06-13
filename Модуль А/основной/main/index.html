@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-name">
+            <img src="../image/logo.png" alt="Логотип" class="logo">
+            <span class="company-name">New Life</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#register">Регистрация</a></li>
+                <li><a href="#profile">Личный кабинет</a></li>
+                <li><a href="#add">Добавить</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+        
+        <section class="recently-added slider-section">
+            <h2>Недавно добавленные объявления</h2>
+            <div class="slider">
+                <div class="slide active">
+                    <img src="animal1.jpg" alt="Животное">
+                    <h3>Кот</h3>
+                    <p>Найден в районе центрального парка.</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="slide">
+                    <img src="animal2.jpg" alt="Животное">
+                    <h3>Собака</h3>
+                    <p>Найдена на улице Ленина.</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="slide">
+                    <img src="animal2.jpg" alt="Животное">
+                    <h3>Собака</h3>
+                    <p>Найдена на улице Ленина.</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="slide">
+                    <img src="animal2.jpg" alt="Животное">
+                    <h3>Собака</h3>
+                    <p>Найдена на улице Ленина.</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="slide">
+                    <img src="animal2.jpg" alt="Животное">
+                    <h3>Собака</h3>
+                    <p>Найдена на улице Ленина.</p>
+                    <button>Подробнее</button>
+                </div>
+                <!-- Другие слайды с объявлениями -->
+            </div>
+        </section>
+        
+   
+    
+    <section class="pet-search">
+        <div class="search-area">
+            <h2>Быстрый поиск животного</h2>
+            <div class="row">
+                <input type="text" placeholder="Введите вид животного">
+            </div>
+            <button>Поиск</button>
+        </div>
+    </section>
+    
+    <section class="company-facts">
+        <div class="company-info">
+            <h2>Факты о компании</h2>
+            <div class="facts">
+                <div class="fact">
+                    <img src="helped.png" alt="Помощь">
+                    <h3>Более 500 животных</h3>
+                    <p>Помогли найти более 500 животных.</p>
+                </div>
+                <div class="fact">
+                    <img src="years.png" alt="Годы">
+                    <h3>Более трех лет</h3>
+                    <p>Более трех лет способствуем возвращению питомцев к хозяевам.</p>
+                </div>
+                <div class="fact">
+                    <img src="free.png" alt="Бесплатно">
+                    <h3>Бесплатные услуги</h3>
+                    <p>Все услуги оказываются бесплатно.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="animal-cards">
+        <h2>Найденные животные</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="animal1.jpg" alt="Животное">
+                <div class="card-info">
+                    <h3>Кот</h3>
+                    <p>Найден в районе центрального парка. <br> Добавлено: 01.06.2024</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="animal1.jpg" alt="Животное">
+                <div class="card-info">
+                    <h3>Кот</h3>
+                    <p>Найден в районе центрального парка. <br> Добавлено: 01.06.2024</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="animal1.jpg" alt="Животное">
+                <div class="card-info">
+                    <h3>Кот</h3>
+                    <p>Найден в районе центрального парка. <br> Добавлено: 01.06.2024</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="animal1.jpg" alt="Животное">
+                <div class="card-info">
+                    <h3>Кот</h3>
+                    <p>Найден в районе центрального парка. <br> Добавлено: 01.06.2024</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="animal1.jpg" alt="Животное">
+                <div class="card-info">
+                    <h3>Кот</h3>
+                    <p>Найден в районе центрального парка. <br> Добавлено: 01.06.2024</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <!-- Другие карточки -->
+        </div>
+    </section>
+    
+    <section class="pet-search-form">
+        <h2>Форма поиска</h2>
+        <div class="search-area">
+            <div class="row">
+                <label for="district">Район:</label>
+                <input type="text" id="district">
+            </div>
+            <div class="row">
+                <label for="animal-type">Вид животного:</label>
+                <select id="animal-search">
+                    <option value="cat">Кот</option>
+                    <option value="dog">Собака</option>
+                    <!-- Добавьте другие варианты по вашему выбору -->
+                </select>
+            </div>
+            <div class="row">
+                <label for="animal-search">Поиск по виду животного:</label>
+                <input type="text" id="animal-search">
+            </div>
+            <button>Поиск питомца</button>
+        </div>
+    </section>
+    <section class="reviews">
+        <h2>Отзывы владельцев</h2>
+        <div class="slider">
+            <div class="slide">
+                <h3>Имя автора отзыва</h3>
+                <img src="pet_photo.jpg" alt="Фото животного">
+                <p>Отзыв владельца о найденном питомце.</p>
+                <p class="date">Дата отзыва</p>
+            </div>
+            <div class="slide">
+                <h3>Имя автора отзыва</h3>
+                <img src="pet_photo.jpg" alt="Фото животного">
+                <p>Отзыв владельца о найденном питомце.</p>
+                <p class="date">Дата отзыва</p>
+            </div>
+            <div class="slide">
+                <h3>Имя автора отзыва</h3>
+                <img src="pet_photo.jpg" alt="Фото животного">
+                <p>Отзыв владельца о найденном питомце.</p>
+                <p class="date">Дата отзыва</p>
+            </div>
+            <div class="slide">
+                <h3>Имя автора отзыва</h3>
+                <img src="pet_photo.jpg" alt="Фото животного">
+                <p>Отзыв владельца о найденном питомце.</p>
+                <p class="date">Дата отзыва</p>
+            </div>
+            <div class="slide">
+                <h3>Имя автора отзыва</h3>
+                <img src="pet_photo.jpg" alt="Фото животного">
+                <p>Отзыв владельца о найденном питомце.</p>
+                <p class="date">Дата отзыва</p>
+            </div>
+            <!-- Другие слайды с отзывами -->
+        </div>
+    </section>
+    <section class="subscribe">
+        <h2>Подписка на новости</h2>
+        <div class="search-area">
+            <div class="row">
+                <label id="check-label" for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+            <div class="row">
+                <input type="checkbox" id="consent" >
+                <label id="checbox-pod" for="consent">Согласие на обработку персональных данных</label>
+            </div>
+            <button>Подписаться</button>
+        </div>
+    </section>
+    
+    <footer class="footer-container">
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#register">Регистрация</a></li>
+                <li><a href="#login">Авторизация</a></li>
+                <li><a href="#profile">Личный кабинет</a></li>
+                <li><a href="#found">Найдено животное</a></li>
+                <li><a href="#search">Поиск</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <p>Телефон: <a href="tel:+88001234567">8 (800) 123-45-67</a></p>
+            <p>Email: <a href="mailto:mail@newlife.ru">mail@newlife.ru</a></p>
+        </div>
+    </footer>
+</body>
+</html>

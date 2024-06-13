@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <style>
+        img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+        }
+        .form-section, .profile-section {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section h2, .profile-section h2 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .profile-info {
+            margin-bottom: 20px;
+        }
+        .ads-group {
+            margin-bottom: 20px;
+        }
+        .ads-group h3 {
+            margin-bottom: 10px;
+        }
+        .ad {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .ad img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .ad-info {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Вход в личный кабинет -->
+        <section class="form-section" id="login">
+            <h2>Вход в личный кабинет</h2>
+            <form>
+                <div class="form-group">
+                    <label for="login-email">E-mail</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit">Войти</button>
+                <button type="button">Восстановить пароль</button>
+            </form>
+        </section>
+
+        <!-- Регистрация в личном кабинете -->
+        <section class="form-section" id="register">
+            <h2>Регистрация в личном кабинете</h2>
+            <form>
+                <div class="form-group">
+                    <label for="register-email">E-mail</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-firstname">Имя</label>
+                    <input type="text" id="register-firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-lastname">Фамилия</label>
+                    <input type="text" id="register-lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone">Телефон</label>
+                    <input type="tel" id="register-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Повтор пароля</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="register-consent" required>
+                    <label for="register-consent">Согласие на обработку персональных данных</label>
+                </div>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+
+        <!-- Личный кабинет пользователя -->
+        <section class="profile-section" id="profile">
+            <h2>Личный кабинет пользователя</h2>
+            <div class="profile-info">
+                <p>Телефон: <span id="profile-phone">8 (800) 123-45-67</span> <button type="button">Изменить</button></p>
+                <p>E-mail: <span id="profile-email">mail@newlife.ru</span> <button type="button">Изменить</button></p>
+                <p>Количество добавленных объявлений: <span id="profile-ads-count">5</span></p>
+                <p>Количество животных, которые вернулись к хозяевам: <span id="profile-returned-count">3</span></p>
+                <p>Дата регистрации: <span id="profile-registration-date">01.01.2021</span></p>
+                <p>Количество дней с момента регистрации: <span id="profile-days-since-registration">1250</span></p>
+            </div>
+            <div class="ads-group" id="active-ads">
+                <h3>Активно</h3>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                    <button type="button">Удалить</button>
+                    <button type="button">Редактировать</button>
+                </div>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                    <button type="button">Удалить</button>
+                    <button type="button">Редактировать</button>
+                </div>
+            </div>
+            <div class="ads-group" id="moderation-ads">
+                <h3>На модерации</h3>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                    <button type="button">Удалить</button>
+                    <button type="button">Редактировать</button>
+                </div>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                    <button type="button">Удалить</button>
+                    <button type="button">Редактировать</button>
+                </div>
+            </div>
+            <div class="ads-group" id="found-ads">
+                <h3>Найдено</h3>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                </div>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                </div>
+            </div>
+            <div class="ads-group" id="archived-ads">
+                <h3>В архиве</h3>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                </div>
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                </div>
+            </div>
+        </section>
+
+        <!-- Добавление информации о найденном животном -->
+        <section class="form-section" id="add-animal">
+            <h2>Добавление информации о найденном животном</h2>
+            <form>
+                <div class="form-group">
+                    <label for="finder-phone">Контактный номер телефона</label>
+                    <input type="tel" id="finder-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="finder-email">E-mail</label>
+                    <input type="email" id="finder-email" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="auto-register">
+                    <label for="auto-register">Автоматическая регистрация</label>
+                </div>
+                <div id="register-block" style="display: none;">
+                    <div class="form-group">
+                        <label for="new-password">Пароль</label>
+                        <input type="password" id="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-new-password">Повтор пароля</label>
+                        <input type="password" id="confirm-new-password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="animal-type">Вид животного</label>
+                    <select id="animal-type" required>
+                        <option value="">Выберите вид</option>
+                        <option value="dog">Собака</option>
+                        <option value="cat">Кошка</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="animal-photos">Фото найденного животного</label>
+                    <input type="file" id="animal-photos" accept="image/*" multiple required>
+                </div>
+                <div class="form-group">
+                    <label for="additional-info">Дополнительная информация</label>
+                    <textarea id="additional-info" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="animal-stamp">Клеймо (если есть)</label>
+                    <input type="text" id="animal-stamp">
+                </div>
+                <div class="form-group">
+                    <label for="animal-district">Район</label>
+                    <input type="text" id="animal-district" required>
+                </div>
+                <div class="form-group">
+                    <label for="found-date">Дата, когда было найдено животное</label>
+                    <input type="date" id="found-date" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">Согласие на обработку персональных данных</label>
+                </div>
+                <button type="submit">Добавить объявление</button>
+            </form>
+        </section>
+
+        <!-- Личный кабинет модератора -->
+        <section class="profile-section" id="moderator">
+            <h2>Личный кабинет модератора</h2>
+            <div class="form-group">
+                <label for="sort-ads">Сортировать объявления по</label>
+                <select id="sort-ads">
+                    <option value="date">Дате</option>
+                    <option value="status">Статусу</option>
+                </select>
+            </div>
+            <div class="ads-group">
+                <div class="ad">
+                    <div class="ad-info">
+                        <p>Район: Центральный парк</p>
+                        <p>Дата добавления: 01.06.2024</p>
+                        <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                        <p>Клеймо: Нет</p>
+                    </div>
+                    <img src="animal1.jpg" alt="Животное">
+                    <div class="form-group">
+                        <label for="ad-status">Статус объявления</label>
+                        <select id="ad-status">
+                            <option value="moderation">На модерации</option>
+                            <option value="active">Активно</option>
+                            <option value="found">Найдено</option>
+                            <option value="archived">В архиве</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Результаты поиска животных -->
+        <section class="profile-section" id="search-results">
+            <h2>Результаты поиска животных</h2>
+            <div class="form-group">
+                <label for="search">Поиск животных</label>
+                <input type="text" id="search">
+            </div>
+            <div class="ads-group">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Вид</th>
+                            <th>Фото</th>
+                            <th>Информация</th>
+                            <th>Клеймо</th>
+                            <th>Район</th>
+                            <th>Дата</th>
+                            <th>Телефон</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Кот</td>
+                            <td><img src="animal1.jpg" alt="Животное"></td>
+                            <td>Кот, белый, найден возле фонтана</td>
+                            <td>Нет</td>
+                            <td>Центральный парк</td>
+                            <td>01.06.2024</td>
+                            <td>8 (800) 123-45-67</td>
+                        </tr>
+                        <tr>
+                            <td>Кот</td>
+                            <td><img src="animal1.jpg" alt="Животное"></td>
+                            <td>Кот, белый, найден возле фонтана</td>
+                            <td>Нет</td>
+                            <td>Центральный парк</td>
+                            <td>01.06.2024</td>
+                            <td>8 (800) 123-45-67</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <button type="button">Предыдущая</button>
+                <button type="button">Следующая</button>
+            </div>
+        </section>
+
+        <!-- Карточка найденного животного -->
+        <section class="profile-section" id="animal-card">
+            <h2>Карточка найденного животного</h2>
+            <div class="ad-info">
+                <img src="animal1.jpg" alt="Животное">
+                <img src="animal1.jpg" alt="Животное">
+                <img src="animal1.jpg" alt="Животное">
+                <p>Вид: Кот</p>
+                <p>Имя нашедшего: Иван Иванов</p>
+                <p>Контактный номер телефона: 8 (800) 123-45-67</p>
+                <p>E-mail: mail@newlife.ru</p>
+                <p>Дополнительная информация: Кот, белый, кличка Мурзик, найден возле фонтана.</p>
+                <p>Клеймо: Нет</p>
+                <p>Район: Центральный парк</p>
+                <p>Дата: 01.06.2024</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

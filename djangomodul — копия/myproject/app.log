@@ -1,0 +1,6 @@
+2024-06-05 15:21:17,447 - files.views - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "C:\OSPanel2\domains\djangomodul — копия\myproject\files\views.py", line 35, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero

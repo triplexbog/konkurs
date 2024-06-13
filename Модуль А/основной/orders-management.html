@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет модератора</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-name">
+            <div class="logo">
+                <img src="image/logo.png" alt="Логотип">
+            </div>
+            <div class="company-name">
+                Название компании
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Поиск</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Добавить</a></li>
+                <li><a href="#">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Объявления о найденных животных</h1>
+            <div class="controls">
+                <label for="sort">Сортировать по:</label>
+                <select id="sort">
+                    <option value="date">Дате</option>
+                    <option value="status">Статусу</option>
+                </select>
+            </div>
+            <div class="ads">
+                <div class="ad">
+                    <h2>Объявление 1</h2>
+                    <p>Вид животного: Кот</p>
+                    <p>Дополнительная информация: Найден в парке возле фонтана.</p>
+                    <p>Контактный номер: +7 (123) 456-78-90</p>
+                    <div class="controls">
+                        <label for="status">Статус:</label>
+                        <select id="status">
+                            <option value="moderation">На модерации</option>
+                            <option value="active">Активно</option>
+                            <option value="found">Найдено</option>
+                            <option value="archive">В архиве</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ad">
+                    <h2>Объявление 2</h2>
+                    <p>Вид животного: Собака</p>
+                    <p>Дополнительная информация: Найдена возле автобусной остановки.</p>
+                    <p>Контактный номер: +7 (123) 456-78-91</p>
+                    <div class="controls">
+                        <label for="status">Статус:</label>
+                        <select id="status">
+                            <option value="moderation">На модерации</option>
+                            <option value="active">Активно</option>
+                            <option value="found">Найдено</option>
+                            <option value="archive">В архиве</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Добавьте здесь больше тестовых объявлений, если необходимо -->
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <p>Краткое описание вашей компании. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#">Поиск</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Добавить</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

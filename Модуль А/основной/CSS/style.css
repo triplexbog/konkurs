@@ -1,0 +1,506 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Белый фон */
+}
+
+header {
+    background-color: #ffffff; /* Белый фон */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для эффекта высоты */
+}
+
+.logo img {
+    max-width: 100px; /* Установите размеры логотипа по вашему усмотрению */
+}
+
+.logo-and-name {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px; /* Добавим небольшой отступ между логотипом и названием компании */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Цвет текста навигационных ссылок */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Цвет текста при наведении */
+}
+/*Главная страница*/
+.search-section {
+    background-color: #ffffff; /* Белый фон */
+    padding: 40px 0;
+    text-align: left; /* Выравниваем текст влево */
+    height: 80vh; /* Высота 90% от высоты окна просмотра */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+}
+.search-section h2 {
+    margin-bottom: 10px;
+}
+.search-section p {
+    margin-bottom: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #0056b3;
+}
+/* Слайдер */
+.recently-added {
+    background-color: #ffffff; /* Белый фон */
+    padding: 40px 0;
+    text-align: center;
+}
+.recently-added h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Центрируем текст */
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.slider {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto; /* Позволяет прокручивать слайды, если они не вмещаются в контейнер */
+}
+.slide {
+    flex: 0 0 calc(33.33% - 20px); /* Ширина слайда (33.33% с учетом отступов между ними) */
+    margin-right: 20px;
+    background-color: #ffffff; /* Белый фон */
+    padding: 20px;
+    text-align: center;
+}
+.slide img {
+    max-width: 100%;
+    height: 200px; /* Задаем одинаковую высоту для всех изображений */
+    margin-bottom: 10px;
+}
+.slide p {
+    font-size: 1em;
+}
+.slide a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.slide a:hover {
+    background-color: #0056b3;
+}
+/*Поиск животного*/
+.animal-search {
+    background-color: #ffffff; /* Белый фон */
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block; /* Делаем метку блочным элементом, чтобы она шла на новой строке */
+}
+.input-group input {
+    margin-top: 5px; /* Небольшой отступ между меткой и полем ввода/выпадающим списком */
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
+}
+.animal-search button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.animal-search button:hover {
+    background-color: #0056b3;
+}
+
+/*Факты о компании*/
+.company-facts {
+    background-color: #ffffff; /* Белый фон */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.company-facts .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.company-info h2 {
+    margin-bottom: 20px;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.fact {
+    flex: 0 0 calc(33.33% - 20px);
+
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.fact h3 {
+    margin-bottom: 10px;
+}
+
+.fact p {
+    font-size: 0.9em;
+}
+
+.fact img {
+    width: 100px; /* Устанавливаем ширину изображения */
+    height: 100px; /* Устанавливаем высоту изображения */
+}
+
+/* Поиск животного */
+.pet-search {
+    background-color: #ffffff; /* Белый фон */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+}
+
+.row {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по вертикали */
+    margin-bottom: 10px;
+}
+
+.row label {
+    text-align: right; /* Выравниваем текст меток по правому краю */
+    margin-right: 10px;
+    flex-basis: 100px; /* Фиксируем ширину метки */
+}
+
+.row input[type="text"],
+.row select {
+    padding: 8px;
+    width: 150px; /* Устанавливаем фиксированную ширину */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Login Section */
+
+.search-section {
+    background-color: #ffffff; /* Белый фон */
+    padding: 40px 0;
+    text-align: center; /* Выравниваем содержимое по центру */
+}
+
+.search-section form {
+    display: inline-block;
+    text-align: left; /* Возвращаем текст в полях формы налево */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: center; /* Выравниваем элементы по центру */
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    padding: 8px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center; /* Выравниваем кнопки по центру */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Добавляем небольшой отступ между кнопками */
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+
+/*Профиль*/
+.ad-card .ad-image {
+    text-align: center;
+}
+
+.ad-card .ad-image img {
+    max-width: 100%;
+    max-height: 150px; /* Установите максимальную высоту для фотографий */
+    height: auto;
+}
+
+.ad-card .ad-details {
+    padding: 15px;
+}
+
+.ad-card .ad-details span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ad-card .buttons {
+    text-align: center;
+}
+
+.ad-card .buttons button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ad-card .buttons button:hover {
+    background-color: #0056b3;
+}
+/*Подвал*/
+.site-footer {
+    background-color: grey;
+    color: #fff;
+    padding: 40px 0;
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*страница модератора*/
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.controls select {
+    padding: 5px;
+}
+
+.ads {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.ad {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.ad h2 {
+    margin-top: 0;
+}
+
+.ad p {
+    margin-bottom: 10px;
+}
+
+.ad .controls {
+    margin-top: 10px;
+}
+
+.ad .controls select {
+    padding: 3px;
+}
+
+/*страница с результатами поиска*/
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+/* Стили для контейнера карточки животного */
+.animal-card {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для фотографий животного */
+.animal-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animal-photos img {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Стили для блока с деталями о животном */
+.animal-details {
+    padding: 20px;
+}
+
+.animal-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.animal-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.animal-details strong {
+    font-weight: bold;
+}

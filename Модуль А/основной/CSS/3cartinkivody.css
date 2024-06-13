@@ -1,0 +1,40 @@
+
+
+/*Факты о компании*/
+.company-facts {
+    background-color: #ffffff; /* Белый фон */
+    padding: 40px 0;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.company-info h2 {
+    margin-bottom: 20px;
+}
+.facts {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.fact {
+    flex: 0 0 calc(33.33% - 20px); /* Изменено с flex: 1 0 auto; */
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.fact h3 {
+    margin-bottom: 10px;
+}
+
+.fact p {
+    font-size: 0.9em;
+}
+
+.fact img {
+    width: 100px; 
+    height: 100px; 
+}

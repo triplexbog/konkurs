@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница Регистрации</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-name">
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo">
+            </div>
+            <div class="company-name">
+                Название компании
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Поиск</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Добавить</a></li>
+                <li><a href="#">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-section">
+        <form class="registration-form" action="#" method="post">
+            <h2>Регистрация в Личном кабинете</h2>
+            <div class="form-group">
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="first-name">Имя:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Фамилия:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Повторите пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Я согласен с обработкой персональных данных</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

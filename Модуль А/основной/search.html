@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты поиска животных</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-name">
+            <div class="logo">
+                <img src="image/logo.png" alt="Логотип">
+            </div>
+            <div class="company-name">
+                Название компании
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Поиск</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Добавить</a></li>
+                <li><a href="#">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Результаты поиска животных</h1>
+        <form action="#" method="GET">
+            <label for="animal">Вид животного:</label>
+            <input type="text" id="animal" name="animal">
+            <label for="location">Район:</label>
+            <input type="text" id="location" name="location">
+            <button type="submit">Поиск</button>
+        </form>
+    </main>
+    <main>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Вид животного</th>
+                        <th>Фото</th>
+                        <th>Дополнительная информация</th>
+                        <th>Клеймо</th>
+                        <th>Район</th>
+                        <th>Дата</th>
+                        <th>Контактный номер</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Собака</td>
+                        <td><img src="dog.jpg" alt="Фото собаки"></td>
+                        <td>Собака найдена на улице в районе центра города. Очень дружелюбная.</td>
+                        <td>Нет</td>
+                        <td>Центральный</td>
+                        <td>2024-03-25</td>
+                        <td>123-456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>Кошка</td>
+                        <td><img src="cat.jpg" alt="Фото кошки"></td>
+                        <td>Кошка найдена возле продуктового магазина. Ласковая и игривая.</td>
+                        <td>Нет</td>
+                        <td>Северный</td>
+                        <td>2024-03-24</td>
+                        <td>987-654-3210</td>
+                    </tr>
+                    <!-- Добавьте другие строки с тестовыми данными, если необходимо -->
+                </tbody>
+                
+            </table>
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <!-- Добавьте другие ссылки, если необходимо -->
+            </div>
+            
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <p>Краткое описание вашей компании. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#">Поиск</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Добавить</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

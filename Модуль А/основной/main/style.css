@@ -1,0 +1,314 @@
+/* Основные стили */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.logo-and-name {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header nav li {
+    margin-right: 10px;
+}
+footer nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.footer-container, .slider-section , .pet-search, .animal-cards, .company-facts, .pet-search-form, .subscribe, .reviews {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+#checbox-pod {
+    width: 32%;
+}
+
+.row label {
+    text-align: right;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.row input[type="text"], .row input[type="email"] {
+    padding: 8px;
+    width: 200px;
+}
+select{
+    padding: 8px;
+    width: 220px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 1 calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-info h3 {
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.company-info h2 {
+    margin-bottom: 20px;
+}
+
+.facts {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.fact {
+    flex: 0 1 calc(33.33% - 20px);
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.fact h3 {
+    margin-bottom: 10px;
+}
+
+.fact p {
+    font-size: 0.9em;
+}
+
+.fact img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    margin-bottom: 10px;
+}
+
+footer nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer nav a:hover {
+    color: #0056b3;
+}
+
+footer .contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contacts p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer .contacts a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer .contacts a:hover {
+    color: #0056b3;
+}
+/*слайдер*/
+.reviews {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 300px; /* Указать ширину слайда */
+    padding: 20px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    scroll-snap-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*слайдер*/
+.recently-added {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 300px; /* Указать ширину слайда */
+    padding: 20px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.slide h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.slide p {
+    margin-bottom: 10px;
+}
+
+.slide button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide button:hover {
+    background-color: #0056b3;
+}
+.slide.active {
+    border: 2px solid #007bff; /* Любой стиль для выделения активного слайда */
+}

@@ -1,0 +1,41 @@
+/*Для стилей браузера сбросил стили  отступа*/
+body{
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+/*Класс container - выравнивание по центру экрана формы + цвет*/
+.container{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(236, 141, 141);
+}
+/*селектор тегов form - выравнивание всех элементов в столбец*/
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+/*селектор тегов unput, button -  внешний отступ, внутренний отступ, размер шрифта
+стиль шрифта(родительский) граница ширина */
+input, button{
+    margin: 5px;
+    padding: 4px 4px;
+    font-size: 18px;
+    font-family: inherit;
+    border: none;
+    width: 200px;
+}
+label, p {
+    margin: 5px;
+    font-size: 18px;
+    font-family: inherit;
+    border: none;
+}
+button{
+    width: 150px;
+    margin: 30px 5px;
+    text-align: left;
+}
+

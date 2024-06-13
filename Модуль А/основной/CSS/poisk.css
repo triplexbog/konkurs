@@ -1,0 +1,42 @@
+/* Поиск животного */
+.pet-search {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%; 
+    justify-content: center; 
+}
+.row label {
+    text-align: right;
+    margin-right: 10px;
+    width: 150px; 
+}
+.row input[type="text"],
+.row select {
+    padding: 8px;
+    width: 200px; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}

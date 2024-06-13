@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.article {
+    flex-basis: 70%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    flex-basis: 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  /* Стиль кнопки 1 */
+  .button1 {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button1:hover {
+    background-color: #45a049;
+  }
+  
+  .button1:active {
+    transform: translateY(2px);
+  }
+  
+  /* Стиль кнопки 2 */
+  .button2 {
+    background-color: #008CBA;
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .button2:hover {
+    background-color: #007a9b;
+  }
+  
+  .button2:active {
+    transform: scale(0.95);
+  }
+  
+  /* Стиль кнопки 3 */
+  .button3 {
+    background-color: #f44336;
+    color: white;
+    border-radius: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .button3:hover {
+    background-color: #d32f2f;
+  }
+  
+  .button3:active {
+    transform: scaleX(0.95);
+  }
+  
+  /* Стиль кнопки 4 */
+  .button4 {
+    background-color: #555555;
+    color: white;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .button4:hover {
+    background-color: #444444;
+  }
+  
+  .button4:active {
+    transform: scale(0.95);
+  }
+  
+  /* Стиль кнопки 5 */
+  .button5 {
+    background-color: #ff9800;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .button5:hover {
+    background-color: #f57c00;
+  }
+  
+  .button5:active {
+    transform: translateY(2px);
+  }
+      

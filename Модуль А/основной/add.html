@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-name">
+            <div class="logo">
+                <img src="image/logo.png" alt="Логотип">
+            </div>
+            <div class="company-name">
+                Название компании
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Поиск</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Добавить</a></li>
+                <li><a href="#">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="pet-search">
+        <div class="container">
+            <h2>Добавление информации о найденном животном</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="contact-phone">Контактный номер телефона:</label>
+                    <input type="text" id="contact-phone" name="contact-phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="contact-email">E-mail:</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="auto-register">Автоматическая регистрация:</label>
+                    <select id="auto-register" name="auto-register">
+                        <option value="yes">Да</option>
+                        <option value="no">Нет</option>
+                    </select>
+                </div>
+                <div id="password-block" class="input-group hidden">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div id="confirm-password-block" class="input-group hidden">
+                    <label for="confirm-password">Подтверждение пароля:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+                <div class="input-group">
+                    <label for="animal-type">Вид животного:</label>
+                    <input type="text" id="animal-type" name="animal-type" required>
+                </div>
+                <div class="input-group">
+                    <label for="animal-photos">Фото животного:</label>
+                    <input type="file" id="animal-photos" name="animal-photos[]" accept="image/*" multiple required>
+                </div>
+                <div class="input-group">
+                    <label for="additional-info">Дополнительная информация:</label>
+                    <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="microchip">Клеймо:</label>
+                    <input type="text" id="microchip" name="microchip">
+                </div>
+                <div class="input-group">
+                    <label for="district">Район:</label>
+                    <input type="text" id="district" name="district">
+                </div>
+                <div class="input-group">
+                    <label for="found-date">Дата нахождения:</label>
+                    <input type="date" id="found-date" name="found-date" required>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" id="agree" name="agree" required>
+                        Я согласен на обработку персональных данных
+                    </label>
+                </div>
+                <button type="submit">Добавить информацию</button>
+            </form>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <p>Краткое описание вашей компании. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#">Поиск</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Добавить</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
